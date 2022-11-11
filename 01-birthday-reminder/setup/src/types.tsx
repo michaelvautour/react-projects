@@ -1,8 +1,9 @@
+import { ReactNode } from "react";
+
 export type Person = {
-  people: {
-    id: number;
-    name: string;
-    age: string;
-    image: string;
-  };
+  length: ReactNode;
+  id: number;
+  name: string;
+  age: string;
+  image: string;
 };
