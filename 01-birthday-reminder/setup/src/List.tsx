@@ -1,10 +1,10 @@
 import React from "react";
 import { Person } from "./types";
 
-const List = ({ people }) => {
+const List = ({ people }: any) => {
   return (
     <>
-      {people.map((person) => {
+      {people.map((person: Person) => {
         const { id, name, age, image } = person;
         return (
           <article key={id} className="person">
