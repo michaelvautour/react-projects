@@ -1,11 +1,15 @@
 import React from "react";
 import { Person } from "./types";
 
+
 const List = ({ people, setPeople }: any) => {
   const removePerson = (id: number) => {
     const removeName = people.filter((e: any) => e.id !== id);
     setPeople(removeName);
   };
+
+const List =({ people }: any) => {
+
   return (
     <>
       {people.map((person: Person) => {
