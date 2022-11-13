@@ -1,5 +1,43 @@
 # React Projects
 
+####
+
+- Each project to make it TypeScript:
+
+  1. Navigate to setup folder in project folder
+  2. Delete pack-lock.json
+  3. Rename all .js files to .tsx
+  4. from /setup level run npm install
+  5. Then run npm install typescript --save-dev
+  6. Sometimes you need to run npx tsc --init to get tsconfig.json file created (not sure why it's only sometimes)
+  7. Replace tsconfig.json with following:
+
+  {
+  "compilerOptions": {
+  "target": "es5",
+  "lib": [
+  "dom",
+  "dom.iterable",
+  "esnext"
+  ],
+  "allowJs": true,
+  "skipLibCheck": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "strict": true,
+  "forceConsistentCasingInFileNames": true,
+  "module": "esnext",
+  "moduleResolution": "node",
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "noEmit": true,
+  "jsx": "react"
+  },
+  "include": [
+  "src"
+  ]
+  }
+
 #### React Course
 
 [My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
