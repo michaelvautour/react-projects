@@ -36,6 +36,10 @@ const Review = () => {
     });
   };
 
+  // Math.random randomizes a number between 0-1
+  // multiplying it by array length will make it between potential index's I could use
+  // Math.floor rounds it to nearest integer as I can't use a floating point (decimal value)
+  // And to prevent it from being same person added an if statement to technically make it less random
   const randomPerson = () => {
     let randomNumber = Math.floor(Math.random() * people.length);
     if (randomNumber === index) {
