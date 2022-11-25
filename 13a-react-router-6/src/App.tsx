@@ -24,7 +24,6 @@ function App() {
             <Route index element={<Products />} />
             <Route path="/products/:productId" element={<SingleProduct />} />
           </Route>
-
           <Route path="/login" element={<Login setUser={setUser}></Login>} />
           <Route
             path="/dashboard/"
